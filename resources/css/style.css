@@ -66,7 +66,6 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center top;
-
   background-attachment: fixed;
 }
 
@@ -137,6 +136,7 @@ header {
   padding: 16px 0;
   color: #555;
 }
+
 
 
 
@@ -1179,4 +1179,132 @@ button:hover {
   -moz-transform: scale(1.3);
   -ms-transform: scale(1.3);
   -o-transform: scale(1.3);
+}
+
+@media (max-width: 1366px) {
+  .container-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .container-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+
+  header {
+    height: 1000px;
+    background-position: top;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+
+  .hero-text-box {
+    width: 100%;
+    padding: 0 10%;
+    margin: -500px 0;
+  }
+
+  .main-nav {
+    padding: 0 10%;
+  }
+
+  .reason {
+    padding: 0 10%;
+  }
+
+
+  .reason__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reason-item {
+    display: block;
+    width: 200px;
+    margin: 30px 30px 10px;
+  }
+
+  .reason-title {
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+    font-size: 17px;
+    font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 60px;
+
+  }
+
+  .reason-title::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+  }
+
+  .icon-1 {
+    background-image: url(../img/icons8-slr-camera-100-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-2 {
+    background-image: url(../img/icons8-fast-track-100-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+
+  }
+
+  .icon-3 {
+    background-image: url(../img/icons8-female-user-100.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-4 {
+    background-image: url(../img/icons8-helping-hand-100-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+  }
+
+  .row-photos {
+    padding: 0 30px;
+  }
+
+  .section-about {
+    max-width: 1000px;
+    height: 400px;
+    margin-bottom: 80px;
+    margin-left: -350px;
+  }
+
+  .about-text {
+    max-height: 50%;
+    max-width: 80%;
+    margin-right: 150px;
+    margin-top: -70px;
+  }
+
 }
